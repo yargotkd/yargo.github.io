@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<!-- links to icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matheus Fagundes</title> <!-- Change the name of the tab -->
+</head>
+<body>
+
+<!-- navigation bar commands -->
+<ul>
+  <li><a href="../index.html">Home</a></li>
+  <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Projects</a>
+      <div class="dropdown-content"> 
+	  <a href="abalone.html">Abalone population</a>
+          <a href="amazon.html">Amazon river</a>
+          <a href="gcm_do.html">GCM + DO dynamics</a>
+          <a href="kelp_forest.html">kelp forest</a>
+      </div>
+  </li>
+  <li><a href="../cv/index.html">CV</a></li>
+</ul>
+    <!-- navigation bar end commands -->
+
+<div class="row">
+
+  <div class="column">
+	<h2>About the simulation</h2>
+    <p>This was a project during a GCM (Global Climate Modeling) class at the Geography department that Dr. Kooperman lectured. 
+       For my project I wanted to see how the dense shelf water (DSW) from the sea of Okhotsk would affect the DO dynamics in 
+       the CCS. 
+     </p>
+  </div>
+
+  <div class="column">
+    <h2>Methods</h2>
+    <p>CESM 2 was used in order to understand the indirect feedback of the sea ice in the CCS. CESM2 is a coupled model that has atmosphere, land, land ice, river runoff, ocean, sea ice, and wave components. Two simulations were done, one with an active sea ice model (CICE) and the other one with a dataset (DICE SSMI). The simulation using DICE SSMI was set to false to couple with the ocean model (POP) so it ran as a prognostic model. The length of the simulations were 1 year each with monthly output. Outputs were converted from curvilinear to lon lat using Climate Data Operator (CDO) version 1.9.9, data analysis was done using Python 3.6. The region of study was from 0-70°N and 100°W-250°W.</p>
+    <p>In an effort to separate the Dissolved Oxygen (DO) coming from the Subarctic current from the Undercurrent in the CCS, I decided to use negative velocities as my flag in the first 300 meters and within 700km from the coastline on the west coast of the US. Dissolved Oxygen at 150 meters were compared between the two simulations for the entire region. </p>
+  </div>
+
+  <div class='column'>
+    <h2>Conclusion</h2>
+    <p>To sum up, coupling an active sea ice model to POP affects the production of DO in the Okthotsk sea, and as a result, it will affect the DO being input in the CCS through the Subarctic current. There are changes in the timing and spread of maximum DO in the Okthotsk sea between the simulation with ice and without ice interaction. Less oxygenated waters are observed when coupling CICE with POP, and therefore, when there is no ice affecting the ocean processes the waters are more oxygenated. </p>
+  </div> 
+
+</div>
+
+
+<div class="clearfix"></div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/map_places.png">
+    <img src="../img/map_places.png" alt="Mountains" width="600" height="400">
+  </a>
+<div class="desc">The regions selected for comparison between CESM2+CICE and CESM2+DICE.</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/hovmoller-cice.png">
+    <img src="../img/hovmoller-cice.png" alt="Forest" width="600" height="400">
+  </a>
+<div class="desc">Hovmoller of DO in CESM2+DICE simulation.</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/hovmoller+cice.png">
+    <img src="../img/hovmoller+cice.png" alt="Cinque Terre" width="600" height="400">
+  </a>
+</div>
+<div class="desc">Hovmoller of DO in CESM2+CICE simulation.</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/do_dif.png">
+    <img src="../img/do_dif.png" alt="Northern Lights" width="600" height="400">
+  </a>
+</div>
+<div class="desc">Monthly DO difference between the two simulations at 150 m.</div>
+</div>
+
+<div class="clearfix"></div>
+	
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/waveletDO.png">
+    <img src="../img/waveletDO.png" alt="Northern Lights" width="600" height="400">
+  </a>
+</div>
+<div class="desc">Wavelet of DO in the North CCS using CMIP6 dataset.</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/project.gif">
+    <img src="../img/project.gif" alt="Northern Lights" width="600" height="400">
+  </a>
+</div>
+<div class="desc">CESM2 + CICE with Okhotsk sea only.</div>
+</div>
+
+</body>
+</html>

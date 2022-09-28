@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<!-- links to icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matheus Fagundes</title> <!-- Change the name of the tab -->
+</head>
+<body>
+
+<!-- navigation bar commands -->
+<ul>
+  <li><a href="../index.html">Home</a></li>
+  <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Projects</a>
+      <div class="dropdown-content"> 
+          <a href="abalone.html">Abalone population</a>
+          <a href="amazon.html">Amazon river</a>
+          <a href="gcm_do.html">GCM + DO dynamics</a>
+          <a href="kelp_forest.html">kelp forest</a>
+      </div>
+  </li>
+  <li><a href="../cv/index.html">CV</a></li>
+</ul>
+
+<div class="row">
+
+  <div class="column">
+	<h2>About the simulation</h2>
+    <p>Climate change is expected to warm, deoxygenate, and acidify ocean waters. Global climate models (GCMs) predict future conditions at large spatial scales, and these predictions are then often used to parameterize laboratory experiments designed to assess biological and ecological responses to future change. However, nearshore ecosystems are affected by a range of physical processes such as tides, local winds, and surface and internal waves, causing local variability in conditions that often exceeds global climate models. Predictions of future climatic conditions at local scales, the most relevant to ecological responses, are largely lacking.  </p>
+  </div>
+
+  <div class="column">
+    <h2>Materials and Methods</h2>
+    <p>We developed a 2D implementation of the Regional Ocean Modeling System (ROMS) to downscale global climate predictions across all Representative Concentration Pathway (RCP) scenarios to smaller spatial scales, in this case the scale of a temperate reef in the northeastern Pacific. To assess the potential biological impacts of local climate variability, we then used the results from different climate scenarios to estimate how climate change may affect the survival, growth, and fertilization of a representative marine benthic invertebrate, the red abalone Haliotis rufescens, to a highly varying multi-stressor environment. More info: <a href=https://static-content.springer.com/esm/art%3A10.1038%2Fs41598-020-71169-6/MediaObjects/41598_2020_71169_MOESM1_ESM.pdf>model simulation and analysis </a> </p>
+  </div>
+
+  <div class='column'>
+    <h2>Results</h2>
+    <p>We found that high frequency variability in temperature, dissolved oxygen (DO), and pH increases as pCO2 increases in the atmosphere. Extreme temperature and pH conditions are generally not expected until RCP 4.5 or greater, while frequent exposure to low DO is already occurring. In the nearshore environment simulation, strong RCP scenarios can affect red abalone growth as well as reduce fertilization during extreme conditions when compared to global scale simulations. </p>
+  </div> 
+
+</div>
+
+<div class="clearfix"></div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/fig5_natPaper.png">
+    <img src="../img/fig5_natPaper.png" alt="Mountains" width="600" height="400">
+  </a>
+<div class="desc">Time series for in situ and model data and power spectra of temperature (a,b), DO (c,d), and pH (e,f). Time series for the model was shifted to match tidal phase of the in situ data. cpd cycles per day.</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/fig6_natPaper.png">
+    <img src="../img/fig6_natPaper.png" alt="Mountains" width="600" height="400">
+  </a>
+<div class="desc">Modelled time series of (a) temperature, (c) DO, and (e) pH for 1 month period with idealized upwelling and boxplot of the mean daily integrated exposure to extreme (b) temperature, (d) dissolved oxygen, and (f) pH for present in situ, present simulated and future scenarios for red abalone (Haliotis rufescens).</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/figure7_natPaper.png">
+    <img src="../img/figure7_natPaper.png" alt="Mountains" width="600" height="400">
+  </a>
+<div class="desc">Red abalone fertilization response to multiple stressors for present and future RCP scenarios. Violin plot shows the distribution of proportional fertilization (Prop. Fert.) based on the threshold used. Black lines indicate 90% confidence interval, black dots show mean proportional fertilization.</div>
+</div>
+</div>
+
+<div class="clearfix">
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/table2_natPaper.png">
+    <img src="../img/table2_natPaper.png" alt="Mountains" width="600" height="400">
+  </a>
+<div class="desc"></div>
+</div>
+</div>
+
+</div>
+
+</body>
+</html>

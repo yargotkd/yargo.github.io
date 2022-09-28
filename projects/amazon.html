@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<!-- links to icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matheus Fagundes</title> <!-- Change the name of the tab -->
+</head>
+<body>
+
+<!-- navigation bar commands -->
+<ul>
+  <li><a href="../index.html">Home</a></li>
+  <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Projects</a>
+      <div class="dropdown-content"> 
+	  <a href="abalone.html">Abalone population</a>
+          <a href="amazon.html">Amazon river</a>
+          <a href="gcm_do.html">GCM + DO dynamics</a>
+          <a href="kelp_forest.html">kelp forest</a>
+      </div>
+  </li>
+  <li><a href="../cv/index.html">CV</a></li>
+</ul>
+    <!-- navigation bar end commands -->
+
+<div class="row">
+
+  <div class="column">
+	<h2>About the simulation</h2>
+    <p>The model used was ROMS (Regional Ocean Modeling System). It was an ocean eddy
+       resolution. The domain was from 61W-14.5E and 15S-12N. We added the 5 main rivers
+       for the region: Amazon(AM), Tapajos (AM), Tocantins (PA), Pindare (MA) and Mearim (MA).
+       Initial and Boundary conditions for the ocean were taken from SODA 5-day and CFSR-NCEP every
+       6 hours. </p>
+  </div>
+
+  <div class="column">
+    <p>Source: <a href="https://aip.scitation.org/doi/abs/10.1063/1.5079164" target="_blank">Fagundes et al., 2018.</a></p>
+  </div>
+
+</div>
+
+
+<div class="clearfix"></div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/plot_anomalia.png">
+    <img src="../img/plot_anomalia.png" alt="Mountains" width="600" height="400">
+  </a>
+<div class="desc">Salinity anomaly for the model.</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/plot_vertical.png">
+    <img src="../img/plot_vertical.png" alt="Forest" width="600" height="400">
+  </a>
+<div class="desc">Initial vertical profile</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/plot_horizontal272.png">
+    <img src="../img/plot_horizontal272.png" alt="Cinque Terre" width="600" height="400">
+  </a>
+</div>
+<div class="desc">Salinity field after 3 years of simulation.</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/streamplot423.png">
+    <img src="../img/streamplot423.png" alt="Northern Lights" width="600" height="400">
+  </a>
+</div>
+<div class="desc">Salinity field + streamlines after 7 years of simulation.</div>
+</div>
+
+
+</body>
+</html>

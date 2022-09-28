@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<!-- links to icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matheus Fagundes</title> <!-- Change the name of the tab -->
+</head>
+<body>
+
+<!-- navigation bar commands -->
+<ul>
+  <li><a href="../index.html">Home</a></li>
+  <li class="dropdown">
+      <a href="javascript:void(0)" class="dropbtn">Projects</a>
+      <div class="dropdown-content"> 
+          <a href="abalone.html">Abalone population</a>
+          <a href="amazon.html">Amazon river</a>
+          <a href="gcm_do.html">GCM + DO dynamics</a>
+          <a href="kelp_forest.html">kelp forest</a>
+      </div>
+  </li>
+  <li><a href="../cv/index.html">CV</a></li>
+</ul>
+
+<div class="row">
+
+  <div class="column">
+	<h2>About the simulation</h2>
+    <p>Modeling of nearshore environments has received more attention in recent years. Increase in computational power and creation of tools such as the 
+       Coupled Ocean-Atmosphere-Wave-Sediment-Transport (COAWST) model (Warner et al., 2008) have helped scientists to better understand coastal
+       processes and nearshore environments and their interaction with sediment and vegetation.
+    </p>
+  </div>
+
+  <div class="column">
+    <h2>Numerical Model Description</h2>
+    <p>The model used in this study was the Coupled Ocean-Atmosphere-Wave-Sediment-Transport (COAWST V3.3) (Warner et al., 2008). 
+	The domain was approximately 14 km long by 3 km wide with a grid size of 25 meters x 25 meters. The model was forced every 10 minutes 
+	with adp data. The model validation was done by caluclating bulk drag, turbulent kinetic energy, and Reynolds number.  </p>
+  </div>
+
+  <div class='column'>
+    <h2>Results</h2>
+    <p>Coming soon</p>
+  </div> 
+
+</div>
+<div class="clearfix"></div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/domain.png">
+    <img src="../img/domain.png" alt="Mountains" width="600" height="400">
+  </a>
+<div class="desc">Model domain and in situ data.</div>
+</div>
+</div>
+
+<div class="responsive">
+<div class="gallery">
+  <a target="_blank" href="../img/kelpModif.png">
+    <img src="../img/kelpModif.png" alt="Mountains" width="800" height="600">
+  </a>
+<div class="desc">Schematic of kelp simulated in the default code and our method.</div>
+</div>
+</div>
+
+</body>
+</html>
